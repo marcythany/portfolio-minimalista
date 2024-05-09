@@ -28,3 +28,37 @@ Sinta-se à vontade para contribuir com este projeto! Abra issues para reportar 
 ### Licença
 
 Este projeto está licenciado sob a licença MIT.
+
+##English
+
+## Minimalist Portfolio with Astro (Configurable JSON)
+
+This project provides a minimalist and customizable portfolio built with the Astro framework. Configuration is done through a JSON file, making it easy to add and manage your information.
+
+### Features
+
+* **Minimalist:** Clean and uncomplicated design to highlight your projects.
+* **Easy configuration:** Modify your portfolio content by editing a single JSON file.
+* **Print friendly:** Optimized layout for printing, create a physical portfolio.
+* **Quick shortcut:** Press Ctrl + K to open a terminal (may vary in your editor).
+
+### Ideal for:
+
+* Professionals looking for a simple and elegant portfolio.
+* Developers who want to try Astro to create a portfolio.
+
+**Note:** This repository does not include detailed usage instructions. Please refer to the Astro documentation for installation and configuration instructions.
+
+### Technologies Used
+
+* Astro
+* JSON
+
+### Contributing
+
+Feel free to contribute to this project! Open issues to report bugs or suggest improvements. Pull requests with new features are also welcome.
+
+### License
+
+This project is licensed under the MIT license.
+
