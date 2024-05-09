@@ -40,7 +40,7 @@ This project provides a minimalist and customizable portfolio built with the Ast
 * **Minimalist:** Clean and uncomplicated design to highlight your projects.
 * **Easy configuration:** Modify your portfolio content by editing a single JSON file.
 * **Print friendly:** Optimized layout for printing, create a physical portfolio.
-* **Quick shortcut:** Press Ctrl + K to open a terminal (may vary in your editor).
+* **Quick shortcut:** Press `Ctrl` + `K` to open a terminal (may vary in your editor).
 
 ### Ideal for:
 
