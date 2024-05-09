@@ -1,0 +1,231 @@
+---
+import Section from '@/layouts/ui/Section.astro'
+import { projects } from '@cv'
+import { Image } from 'astro:assets'
+
+import GitHub from 'icons/GitHub.astro'
+import Link from 'icons/Link.astro'
+---
+
+<Section title='Projetos'>
+  <div class='print'>
+    <ul>
+      {
+        projects.map(({ name, url, code, description }) => (
+          <li>
+            <article>
+              <header>
+                <h3>{name}</h3>
+              </header>
+              <p>{description}</p>
+              <footer>
+                <div class='btn'>
+                  <span>{code}</span>
+                  <GitHub />
+                </div>
+                <div class='btn'>
+                  <span>{url}</span>
+                  <Link />
+                </div>
+              </footer>
+            </article>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+  <div class='no-print'>
+    <ul>
+      {
+        projects.map(({ name, url, code, description, image }) => (
+          <li>
+            <article>
+              <header>
+                <a
+                  href={url}
+                  title={`Veja o projeto ${name}`}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <figure>
+                    <Image
+                      src={image}
+                      title={`Miniatura de ${name}`}
+                      alt={`Miniatura de ${name}`}
+                      loading='lazy'
+                      height={200}
+                      width={200}
+                      class='thumb'
+                    />
+                  </figure>
+
+                  <h3>{name}</h3>
+                </a>
+              </header>
+              <p>{description}</p>
+              <footer>
+                <div class='btn'>
+                  <a
+                    href={url}
+                    title={`Veja o projeto ${name}`}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <span>Código</span>
+                    <GitHub />
+                  </a>
+                </div>
+                <div class='btn'>
+                  <a
+                    href={code}
+                    title={`Veja o código do projeto ${name}`}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <span>Live</span>
+                    <Link />
+                  </a>
+                </div>
+              </footer>
+            </article>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</Section>
+
+<style>
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-inline: -16px;
+  }
+
+  article {
+    border-radius: 8px;
+    border: 1px solid #3a539b;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    height: 100%;
+  }
+
+  article header {
+    flex: 1;
+  }
+
+  article h3 {
+    margin-bottom: 4px;
+  }
+
+  article a {
+    color: #3a539b;
+  }
+
+  article a:hover {
+    text-decoration: underline;
+  }
+
+  article p {
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+    margin-bottom: 4px;
+  }
+
+  article h3 span {
+    color: rgb(0, 188, 47);
+    animation-name: flicker;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+  }
+
+  .thumb {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    font-size: 0.6rem;
+  }
+
+  footer span {
+    border-radius: 6px;
+    font-size: 0.6rem;
+    font-weight: 500;
+    padding: 0.2rem 0.6rem;
+  }
+
+  a span {
+    display: inline-flex;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+
+  .btn {
+    color: #3a539b;
+    font-size: 0.65rem;
+    display: flex;
+    margin-top: 8px;
+  }
+
+  .btn a:hover {
+    background: #eee;
+    border: 1px solid #ddd;
+  }
+
+  .btn a {
+    color: #3a539b;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #3a539b;
+    width: 100%;
+    gap: 5px;
+    padding: 4px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+
+  @keyframes flicker {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.25;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @media (width <= 700px) {
+    ul {
+      margin-inline: 0px;
+    }
+
+    article {
+      border: none;
+      box-shadow: 0 1px 1px #f2f2f2;
+      padding: 0 0 16px 0;
+    }
+  }
+
+  @media print {
+    article h3 span {
+      animation-name: none;
+    }
+  }
+</style>

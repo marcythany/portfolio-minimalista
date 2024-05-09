@@ -1,0 +1,117 @@
+---
+import Section from '@/layouts/ui/Section.astro'
+
+import { work } from '@cv'
+---
+
+<Section title='Experiências'>
+  <ul>
+    {
+      work.map(({ name, startDate, endDate, position, summary }) => {
+        const startYears = new Date(startDate).toLocaleDateString('pt-BR', {
+          year: 'numeric',
+          month: 'long',
+        })
+        const endYears = endDate
+          ? new Date(endDate).toLocaleDateString('pt-BR', {
+              year: 'numeric',
+              month: 'long',
+            })
+          : 'Presente'
+
+        return (
+          <li>
+            <article>
+              <header>
+                <div>
+                  <h3>{name}</h3>
+                  <h4>{position}</h4>
+                </div>
+                <time>{`${startYears} - ${endYears}`}</time>
+              </header>
+              <footer>
+                <p>{summary}</p>
+              </footer>
+            </article>
+          </li>
+        )
+      })
+    }
+  </ul>
+</Section>
+
+<style>
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  article h3 {
+    font-weight: 500;
+  }
+
+  article a {
+  }
+
+  article a:hover {
+    text-decoration: underline;
+  }
+
+  article h4 {
+    font-weight: 400;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4px;
+  }
+
+  time {
+    font-size: 0.85rem;
+    min-width: 102px;
+    cursor: default;
+  }
+
+  [data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease-in-out 0.5s;
+    visibility: visible;
+  }
+
+  [data-title]:after {
+    content: attr(data-title);
+    background-color: #333;
+    color: #fff;
+    font-size: 0.75rem;
+    font-family:
+      Menlo,
+      Monaco,
+      Lucida Console,
+      'Courier New',
+      monospace;
+    position: absolute;
+    padding: 0.2rem 0.5rem;
+    bottom: -1.4rem;
+    left: 50%;
+    white-space: nowrap;
+    box-shadow: 1px 1px 1px #222222;
+    opacity: 0;
+    border: 1px solid #111111;
+    z-index: 99999;
+    visibility: hidden;
+    border-radius: 6px;
+  }
+
+  [data-title] {
+    position: relative;
+  }
+
+  @media (width <= 700px) {
+    time {
+      text-align: right;
+    }
+  }
+</style>
