@@ -1,57 +1,30 @@
-# Astro Starter Kit: Basics
+## Portfólio Minimalista com Astro (JSON configurável)
 
-```sh
-npm create astro@latest -- --template basics
-```
+Este projeto oferece um portfólio minimalista e personalizável, construído com a framework Astro. A configuração é feita através de um arquivo JSON, facilitando a adição e gerenciamento de suas informações.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+**Características:**
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+* Minimalista: Design clean e descomplicado para destacar seus projetos.
+* Fácil configuração: Modifique o conteúdo do seu portfólio editando um único arquivo JSON.
+* Impressão amigável: Layout otimizado para impressão, crie um portfólio físico.
+* Atalho prático: Pressione `Ctrl` + `K` para abrir um terminal (pode variar no seu editor).
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+**Ideal para:**
 
-## 🚀 Project Structure
+* Profissionais que buscam um portfólio simples e elegante.
+* Desenvolvedores que desejam experimentar o Astro para criar um portfólio.
 
-Inside of your Astro project, you'll see the following folders and files:
+**Observação:** Este repositório não inclui instruções detalhadas de uso. Consulte a documentação do Astro para instruções de instalação e configuração.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+### Tecnologias Utilizadas
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page
-is exposed as a route based on its file name.
+* Astro
+* JSON
 
-There's nothing special about `src/components/`, but that's where we like to put
-any Astro/React/Vue/Svelte/Preact components.
+### Contribuindo
 
-Any static assets, like images, can be placed in the `public/` directory.
+Sinta-se à vontade para contribuir com este projeto! Abra issues para reportar bugs ou sugerir melhorias. Pull requests com novas funcionalidades também são bem-vindas.
 
-## 🧞 Commands
+### Licença
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into
-our [Discord server](https://astro.build/chat).
+Este projeto está licenciado sob a licença MIT.
