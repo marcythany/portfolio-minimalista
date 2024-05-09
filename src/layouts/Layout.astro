@@ -1,19 +1,39 @@
 ---
 interface Props {
   title: string
+  description?: string
+  image?: string
 }
 
-const { title } = Astro.props
+const canonicalURL = new URL(Astro.url.pathname, Astro.site)
+
+const {
+  title,
+  description = 'Marcy - Mini Portfolio',
+  image = '/marcy-miniportfolio-vercel-app.jpg',
+} = Astro.props
 ---
 
 <!doctype html>
 <html lang='pt-br'>
   <head>
     <meta charset='UTF-8' />
-    <meta name='description' content='Marcy - Mini Portfólio' />
+    <meta name='description' content='Astro description' />
     <meta name='viewport' content='width=device-width' />
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='generator' content={Astro.generator} />
+    <link rel='canonical' href={canonicalURL} />
+    <meta property='og:type' content='website' />
+    <meta property='og:url' content={Astro.url} />
+    <meta property='og:title' content={title} />
+    <meta property='og:description' content={description} />
+    <meta property='og:image' content={new URL(image, Astro.url)} />
+
+    <meta property='twitter:card' content='summary_large_image' />
+    <meta property='twitter:url' content={Astro.url} />
+    <meta property='twitter:title' content={title} />
+    <meta property='twitter:description' content={description} />
+    <meta property='twitter:image' content={new URL(image, Astro.url)} />
     <title>{title}</title>
   </head>
   <body>
