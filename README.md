@@ -29,7 +29,7 @@ Sinta-se à vontade para contribuir com este projeto! Abra issues para reportar 
 
 Este projeto está licenciado sob a licença MIT.
 
-##English
+## English
 
 ## Minimalist Portfolio with Astro (Configurable JSON)
 
