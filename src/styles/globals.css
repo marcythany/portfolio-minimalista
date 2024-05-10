@@ -1,0 +1,92 @@
+html.dark {
+  background-color: #483352;
+  color: #fff;
+}
+
+.dark .nav-links a {
+  color: #fff;
+}
+.dark .projects {
+  background: #2b1f31;
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+
+.dark .skill {
+  background: #2b1f31;
+}
+
+.dark footer a {
+  color: #fff !important;
+  border: 1px solid #fff !important;
+}
+
+.dark .no-print {
+  color: #fff !important;
+}
+
+.dark #normal-footer {
+  background: #2b1f31d0;
+}
+
+.dark #hotkeypad [data-container] {
+  background: #2b1f31f9;
+}
+
+.dark #hotkeypad [data-hotkey][data-active] {
+  background-color: #483352;
+}
+
+.dark #hotkeypad [data-hotkey] p {
+  color: #fff;
+}
+
+.dark #hotkeypad [data-container] header input {
+  color: #fff;
+  background-color: #2b1f31d0;
+}
+
+.dark #hotkeypad [data-container] header ::placeholder {
+  color: #fff;
+}
+
+.dark #hotkeypad [data-container] footer p {
+  color: #fff;
+}
+
+.dark #hotkeypad [data-container] footer kbd {
+  color: #000;
+}
+
+.dark #hotkeypad [data-active] div span {
+  color: #000;
+}
+
+.dark #hotkeypad [data-hotkey] span svg {
+  color: #fff;
+}
+
+.dark kbd {
+  color: #000;
+  background: #fff;
+}
+
+.dark .no-print a:hover {
+  color: #efd9fc !important;
+  background: #483352 !important;
+  border: 1px solid #dea1ff !important;
+}
+
+.dark article a {
+  color: #fff !important;
+}
+
+.dark .btn a {
+  border: 1px solid #ddd !important;
+}
+
+.dark .btn a:hover {
+  color: #efd9fc !important;
+  background: #483352 !important;
+  border: 1px solid #dea1ff !important;
+}

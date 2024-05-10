@@ -36,7 +36,7 @@ const SKILLS_ICONS: Record<string, any> = {
         const Icon = SKILLS_ICONS[iconName]
 
         return (
-          <li title={name}>
+          <li title={name} class='skill'>
             {Icon && <Icon />} <span>{name}</span>
           </li>
         )
