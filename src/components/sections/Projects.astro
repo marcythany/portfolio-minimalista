@@ -1,13 +1,19 @@
 ---
 import Section from '@layouts/ui/Section.astro'
-import { projects } from '@cv'
+import { projects as projectsBr } from '@cv'
+import { projects as projectsEn } from '@cv-en'
 import { Image } from 'astro:assets'
 
 import GitHub from 'icons/GitHub.astro'
 import Link from 'icons/Link.astro'
+import { getLocaleFromUrl } from '@/src/utils/i18n'
+
+const currentLocale = getLocaleFromUrl(Astro.url.pathname)
+
+const projects = currentLocale === 'en' ? projectsEn : projectsBr
 ---
 
-<Section title='Projetos'>
+<Section title={currentLocale === 'en' ? 'Projects' : 'Projetos'}>
   <div class='print'>
     <ul>
       {
@@ -42,16 +48,16 @@ import Link from 'icons/Link.astro'
             <article class='projects'>
               <header>
                 <a
-                  href={url}
-                  title={`Veja o projeto ${name}`}
+                  href={code}
+                  title={`${currentLocale === 'en' ? 'See the project' : 'Veja o projeto'} ${name}`}
                   target='_blank'
                   rel='noopener noreferrer'
                 >
                   <figure>
                     <Image
                       src={image}
-                      title={`Miniatura de ${name}`}
-                      alt={`Miniatura de ${name}`}
+                      title={`${name} Thumbnail`}
+                      alt={`${name} Thumbnail`}
                       loading='lazy'
                       height={200}
                       width={200}
@@ -66,23 +72,23 @@ import Link from 'icons/Link.astro'
               <footer>
                 <div class='btn'>
                   <a
-                    href={url}
-                    title={`Veja o projeto ${name}`}
+                    href={code}
+                    title={`${currentLocale === 'en' ? 'See the code from the project' : 'Veja o código do projeto'} ${name}`}
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    <span>Código</span>
+                    <span>{currentLocale === 'en' ? 'Code' : 'Código'}</span>
                     <GitHub />
                   </a>
                 </div>
                 <div class='btn'>
                   <a
-                    href={code}
-                    title={`Veja o código do projeto ${name}`}
+                    href={url}
+                    title={`${currentLocale === 'en' ? 'See the project' : 'Veja o projeto'} ${name}`}
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    <span>Live</span>
+                    <span>{currentLocale === 'en' ? 'Live' : 'Site'}</span>
                     <Link />
                   </a>
                 </div>

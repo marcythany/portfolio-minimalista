@@ -1,0 +1,27 @@
+---
+import Section from '@layouts/ui/Section.astro'
+import ThemeIcon from '@components/ThemeIcon.astro'
+import Toggle from '@components/Toggle.astro'
+
+type Props = {}
+
+const {} = Astro.props
+---
+
+<Section>
+  <nav class='no-print'>
+    <Toggle />
+    <ThemeIcon />
+  </nav>
+</Section>
+
+<style>
+  nav {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    align-items: end;
+    margin-top: 42px;
+    gap: 16px;
+  }
+</style>

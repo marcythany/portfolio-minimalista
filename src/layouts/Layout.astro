@@ -1,4 +1,6 @@
 ---
+import NavBar from '@components/NavBar.astro'
+
 interface Props {
   title: string
   description?: string
@@ -6,6 +8,8 @@ interface Props {
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
+
+const language = Astro.currentLocale === 'en' ? 'en' : 'pt-br'
 
 const {
   title,
@@ -15,7 +19,7 @@ const {
 ---
 
 <!doctype html>
-<html lang='pt-br'>
+<html lang={language}>
   <head>
     <meta charset='UTF-8' />
     <meta name='description' content='Astro description' />
@@ -37,6 +41,7 @@ const {
     <title>{title}</title>
   </head>
   <body>
+    <NavBar />
     <slot />
   </body>
 </html>
@@ -149,8 +154,17 @@ const {
     border: 1px solid #fff !important;
   }
 
+  .dark .toggleBtn {
+    color: #fff !important;
+    border: 1px solid #fff !important;
+  }
+
   .dark .no-print {
     color: #fff !important;
+  }
+
+  .dark .print section {
+    display: hidden !important;
   }
 
   .dark #normal-footer {

@@ -1,23 +1,37 @@
 ---
 import Section from '@layouts/ui/Section.astro'
+import { work as workBr } from '@cv'
+import { work as workEn } from '@cv-en'
+import { getLocaleFromUrl } from '@/src/utils/i18n'
 
-import { work } from '@cv'
+const currentLocale = getLocaleFromUrl(Astro.url.pathname)
+const work = currentLocale === 'en' ? workEn : workBr
+const title = currentLocale === 'en' ? 'Experience' : 'Experiências'
 ---
 
-<Section title='Experiências'>
+<Section title={title}>
   <ul>
     {
       work.map(({ name, startDate, endDate, position, summary }) => {
-        const startYears = new Date(startDate).toLocaleDateString('pt-BR', {
-          year: 'numeric',
-          month: 'long',
-        })
+        // Translation for date formatting
+        const startYears = new Date(startDate).toLocaleDateString(
+          currentLocale === 'en' ? 'en-US' : 'pt-BR',
+          {
+            year: 'numeric',
+            month: 'long',
+          },
+        )
         const endYears = endDate
-          ? new Date(endDate).toLocaleDateString('pt-BR', {
-              year: 'numeric',
-              month: 'long',
-            })
-          : 'Presente'
+          ? new Date(endDate).toLocaleDateString(
+              currentLocale === 'en' ? 'en-US' : 'pt-BR',
+              {
+                year: 'numeric',
+                month: 'long',
+              },
+            )
+          : currentLocale === 'en'
+            ? 'Present'
+            : 'Presente'
 
         return (
           <li>

@@ -1,6 +1,7 @@
 ---
 import Section from '@layouts/ui/Section.astro'
-import { basics } from '@cv'
+import { basics as basicsBr } from '@cv'
+import { basics as basicsEn } from '@cv-en'
 import Mail from 'icons/Mail.astro'
 import Phone from 'icons/Phone.astro'
 import X from 'icons/X.astro'
@@ -8,8 +9,11 @@ import LinkedIn from 'icons/LinkedIn.astro'
 import GitHub from 'icons/GitHub.astro'
 import WorldMap from 'icons/WorldMap.astro'
 import { Image } from 'astro:assets'
+import { getLocaleFromUrl } from '@/src/utils/i18n'
 
-const { name, label, image, location, profiles, phone, email } = basics
+const currentLocale = getLocaleFromUrl(Astro.url.pathname)
+
+const { name, label, image, location, profiles, phone, email } = currentLocale === 'en' ? basicsEn : basicsBr
 const { city, region } = location
 
 const SOCIAL_ICONS: Record<string, any> = {
@@ -30,7 +34,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(' • ')
       <h1>{name}</h1>
       <h2>{label}</h2>
       <span>
-        <WorldMap title='Localização' />
+        <WorldMap title={currentLocale === 'en' ? 'Location' : 'Localização'} />
         {city}, {region}
       </span>
       <footer>
@@ -42,12 +46,22 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(' • ')
             email && (
               <a
                 href={`mailto:${email}`}
-                title={`Enviar um email para ${name} em ${email}`}
+                title={`${
+                  currentLocale === 'en'
+                    ? `Send an email to ${name} at ${email}`
+                    : `Enviar um email para ${name} em ${email}`
+                }`}
                 target='_blank'
                 rel='noopener noreferrer'
                 class='link'
               >
-                <Mail title={`Enviar um email para ${name} em ${email}`} />
+                <Mail
+                  title={`${
+                    currentLocale === 'en'
+                      ? `Send an email to ${name} at ${email}`
+                      : `Enviar um email para ${name} em ${email}`
+                  }`}
+                />
               </a>
             )
           }
@@ -55,12 +69,22 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(' • ')
             phone && (
               <a
                 href={`tel:${phone}`}
-                title={`Ligar para ${name} em ${phone}`}
+                title={`${
+                  currentLocale === 'en'
+                    ? `Call ${name} at ${phone}`
+                    : `Ligar para ${name} em ${phone}`
+                }`}
                 target='_blank'
                 rel='noopener noreferrer'
                 class='link'
               >
-                <Phone title={`Ligar para ${name} em ${phone}`} />
+                <Phone
+                  title={`${
+                    currentLocale === 'en'
+                      ? `Call ${name} at ${phone}`
+                      : `Ligar para ${name} em ${phone}`
+                  }`}
+                />
               </a>
             )
           }
@@ -70,12 +94,22 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(' • ')
               return (
                 <a
                   href={url}
-                  title={`Perfil de ${username} no ${network}`}
+                  title={`${
+                    currentLocale === 'en'
+                      ? `View ${username}'s profile on ${network}`
+                      : `Perfil de ${username} no ${network}`
+                  }`}
                   target='_blank'
                   rel='noopener noreferrer'
                   class='link'
                 >
-                  <Icon title={`Perfil de ${username} no ${network}`} />
+                  <Icon
+                    title={`${
+                      currentLocale === 'en'
+                        ? `View ${username}'s profile on ${network}`
+                        : `Perfil de ${username} no ${network}`
+                    }`}
+                  />
                 </a>
               )
             })
