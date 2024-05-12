@@ -4,7 +4,18 @@
     "baseUrl": ".",
     "paths": {
       "@cv": ["./cv.json"],
-      "@/*": ["src/*"]
-    }
+      "@cv-en": ["./cv-en.json"],
+      "@/*": ["./*"],
+      "@src/*": ["./src/*"],
+      "@components/*": ["./src/components/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@layouts/*": ["./src/layouts/*"],
+      "@stores/*": ["./src/stores/*"],
+      "@i18n/*": ["./src/i18n/*"],
+      "@types": ["./src/types.d.ts"],
+      "@cv-ts": ["./src/cv.d.ts"]
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
   }
 }
