@@ -1,5 +1,5 @@
 ---
-import Section from '@/layouts/ui/Section.astro'
+import Section from '@layouts/ui/Section.astro'
 import { projects } from '@cv'
 import { Image } from 'astro:assets'
 
@@ -39,7 +39,7 @@ import Link from 'icons/Link.astro'
       {
         projects.map(({ name, url, code, description, image }) => (
           <li>
-            <article class="projects">
+            <article class='projects'>
               <header>
                 <a
                   href={url}
