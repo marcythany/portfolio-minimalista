@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslation } from '@/lib/hooks/useTranslation';
-import { Github, Heart, Linkedin, Mail } from 'lucide-react';
+import { Github, Heart, Linkedin } from 'lucide-react';
 
 export function Footer() {
 	const { t } = useTranslation();
@@ -19,11 +19,6 @@ export function Footer() {
 			href: 'https://www.linkedin.com/in/marcythany/',
 			label: 'LinkedIn',
 		},
-		{
-			icon: Mail,
-			href: 'mailto:marcythany@gmail.com',
-			label: 'Email',
-		},
 	];
 
 	const scrollToTop = () => {
@@ -33,7 +28,7 @@ export function Footer() {
 	return (
 		<footer className='bg-card border-t border-border'>
 			<div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
-				<div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
+				<div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
 					{/* Brand */}
 					<div className='space-y-4'>
 						<button
@@ -47,7 +42,7 @@ export function Footer() {
 						</p>
 					</div>
 
-					{/* Quick Links */}
+					{/* Quick Links & Social */}
 					<div className='space-y-4'>
 						<h3 className='text-lg font-semibold text-foreground'>
 							{t('footer.quickLinks')}
@@ -74,20 +69,8 @@ export function Footer() {
 								</button>
 							))}
 						</nav>
-					</div>
 
-					{/* Contact & Social */}
-					<div className='space-y-4'>
-						<h3 className='text-lg font-semibold text-foreground'>
-							{t('footer.contactTitle')}
-						</h3>
-						<div className='space-y-2 text-muted-foreground'>
-							<p>Novo Hamburgo, RS, Brasil</p>
-							<p>(51) 98115-8271</p>
-							<p>marcythany@gmail.com</p>
-						</div>
-
-						<div className='flex space-x-4 pt-2'>
+						<div className='flex space-x-4 pt-4'>
 							{socialLinks.map((social) => {
 								const Icon = social.icon;
 								return (

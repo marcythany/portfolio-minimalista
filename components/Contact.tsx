@@ -7,9 +7,7 @@ import {
 	CheckCircle,
 	Github,
 	Linkedin,
-	Mail,
 	MapPin,
-	Phone,
 	Send,
 } from 'lucide-react';
 import { useState } from 'react';
@@ -125,20 +123,6 @@ export function Contact() {
 	};
 
 	const contactInfo = [
-		{
-			icon: Mail,
-			label: t('contact.info.email'),
-			value: 'marcythany@gmail.com',
-			href: 'mailto:marcythany@gmail.com',
-			color: 'text-primary',
-		},
-		{
-			icon: Phone,
-			label: t('contact.info.phone'),
-			value: '(51) 98115-8271',
-			href: 'tel:+5551981158271',
-			color: 'text-accent',
-		},
 		{
 			icon: MapPin,
 			label: t('contact.info.location'),
