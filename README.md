@@ -1,78 +1,36 @@
-## Portfólio Minimalista com Astro (JSON configurável)
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Este projeto oferece um portfólio minimalista e personalizável, construído com a
-framework Astro. A configuração é feita através de um arquivo JSON, facilitando
-a adição e gerenciamento de suas informações.
+## Getting Started
 
-**Características:**
+First, run the development server:
 
-- Minimalista: Design clean e descomplicado para destacar seus projetos.
-- Fácil configuração: Modifique o conteúdo do seu portfólio editando um único
-  arquivo JSON.
-- Impressão amigável: Layout otimizado para impressão, crie um portfólio físico.
-- Atalho prático: Pressione `Ctrl` + `K` para abrir um terminal (pode variar no
-  seu editor).
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-**Ideal para:**
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- Profissionais que buscam um portfólio simples e elegante.
-- Desenvolvedores que desejam experimentar o Astro para criar um portfólio.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-**Observação:** Este repositório não inclui instruções detalhadas de uso.
-Consulte a documentação do Astro para instruções de instalação e configuração.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-### Tecnologias Utilizadas
+## Learn More
 
-- Astro
-- JSON
+To learn more about Next.js, take a look at the following resources:
 
-### Contribuindo
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Sinta-se à vontade para contribuir com este projeto! Abra issues para reportar
-bugs ou sugerir melhorias. Pull requests com novas funcionalidades também são
-bem-vindas.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-### Licença
+## Deploy on Vercel
 
-Este projeto está licenciado sob a licença MIT.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## English
-
-## Minimalist Portfolio with Astro (Configurable JSON)
-
-This project provides a minimalist and customizable portfolio built with the
-Astro framework. Configuration is done through a JSON file, making it easy to
-add and manage your information.
-
-### Features
-
-- **Minimalist:** Clean and uncomplicated design to highlight your projects.
-- **Easy configuration:** Modify your portfolio content by editing a single JSON
-  file.
-- **Print friendly:** Optimized layout for printing, create a physical
-  portfolio.
-- **Quick shortcut:** Press `Ctrl` + `K` to open a terminal (may vary in your
-  editor).
-
-### Ideal for:
-
-- Professionals looking for a simple and elegant portfolio.
-- Developers who want to try Astro to create a portfolio.
-
-**Note:** This repository does not include detailed usage instructions. Please
-refer to the Astro documentation for installation and configuration
-instructions.
-
-### Technologies Used
-
-- Astro
-- JSON
-
-### Contributing
-
-Feel free to contribute to this project! Open issues to report bugs or suggest
-improvements. Pull requests with new features are also welcome.
-
-### License
-
-This project is licensed under the MIT license.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
