@@ -14,7 +14,7 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 export function Hero() {
-	const { t } = useTranslation();
+	const { t, locale } = useTranslation();
 	const [imageError, setImageError] = useState(false);
 	const [isVisible, setIsVisible] = useState(false);
 	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -139,7 +139,12 @@ export function Hero() {
 							variant='outline'
 							size='lg'
 							className='w-full sm:w-auto group border-2 hover:border-primary transition-all duration-300'
-							onClick={() => window.open('/cv-marcel-sobral.pdf', '_blank')}
+							onClick={() => {
+								const cvPath = locale.startsWith('pt')
+									? '/cv-marcel-sobral-pt.pdf'
+									: '/cv-marcel-sobral-en.pdf';
+								window.open(cvPath, '_blank');
+							}}
 						>
 							<Download className='h-5 w-5 mr-2 group-hover:animate-bounce' />
 							{t('hero.downloadCV')}
