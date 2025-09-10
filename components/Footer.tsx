@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslation } from '@/lib/hooks/useTranslation';
-import { Github, Heart, Linkedin } from 'lucide-react';
+import { Github, Linkedin } from 'lucide-react';
 
 export function Footer() {
 	const { t } = useTranslation();
@@ -103,7 +103,9 @@ export function Footer() {
 								{t('footer.kiloCodeAgent')}
 							</span>
 							<span>{t('footer.and')}</span>
-							<span className='text-primary font-medium'>Next.js</span>
+							<span className='text-primary font-medium'>
+								{t('techStack.nextjs')}
+							</span>
 						</div>
 					</div>
 				</div>

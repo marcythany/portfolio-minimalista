@@ -244,20 +244,6 @@ export const translations = {
 			contactTitle: 'Contato',
 		},
 
-		// Contact Additional
-		contactDetails: {
-			title: 'Informações de Contato',
-			socialMedia: 'Redes Sociais',
-			availability: 'Disponibilidade',
-			sendMessage: 'Envie uma Mensagem',
-			availabilityItems: [
-				'Trabalho remoto ou híbrido',
-				'Regime CLT 5x2',
-				'Sem funções de atendimento ao público',
-				'Disponível para início imediato',
-			],
-		},
-
 		// Projects Additional
 		projectLabels: {
 			technologies: 'Tecnologias',
@@ -267,36 +253,45 @@ export const translations = {
 			responsive: 'Responsivo',
 		},
 
-		// Skills Additional
-		skillsSummary: {
-			title: 'Foco em Acessibilidade e Qualidade',
-			wcag: 'WCAG 2.1',
-			complianceAA: 'Compliance AA',
-			lighthouseScore: 'Lighthouse Score',
-			mobileFirst: 'Mobile-First',
+		// Tech Stack Items
+		techStack: {
+			react: 'React',
+			typescript: 'TypeScript',
+			tailwind: 'Tailwind CSS',
+			motion: 'Motion',
+			storybook: 'Storybook',
+			designSystem: 'Design System',
+			nextjs: 'Next.js',
+			accessibility: 'Acessibilidade',
+			performance: 'Performance',
+			html5: 'HTML5',
+			css3: 'CSS3',
+			javascript: 'JavaScript',
+			isGdApi: 'is.gd API',
+			gamerPowerApi: 'GamerPower API',
+		},
+
+		// Performance Scores
+		performanceScores: {
+			lighthouse92: '92/100 Lighthouse',
+			lighthouse89: '89/100 Lighthouse',
+			lighthouse95: '95/100 Lighthouse',
+			lighthouse96: '96/100 Lighthouse',
+			lighthouse91: '91/100 Lighthouse',
+		},
+
+		// Accessibility Levels
+		accessibilityLevels: {
+			wcag21AA: 'WCAG 2.1 AA',
+			wcag21AAA: 'WCAG 2.1 AAA',
+		},
+
+		// Responsive Design Terms
+		responsiveTerms: {
+			mobileFirst: 'Mobile-first',
+			adaptiveDesign: 'Adaptive Design',
+			progressiveEnhancement: 'Progressive Enhancement',
 			responsiveDesign: 'Responsive Design',
-		},
-
-		// Timeline Additional
-		timelineExtras: {
-			currentStatus: 'Status Atual',
-			currentStatusDescription:
-				'Atualmente trabalhando como operador de caixa no Atacadão enquanto busco oportunidades como desenvolvedor frontend júnior. Focado em posições remotas com regime CLT 5x2, sem funções de atendimento ao público.',
-			experience: 'Experiência Atual',
-			experienceRole: 'Operador de Caixa - Atacadão',
-			objective: 'Objetivo',
-			objectiveRole: 'Desenvolvedor Frontend Júnior',
-			yearsStudy: 'Anos de Estudos',
-			projectsCount: 'Projetos Desenvolvidos',
-			qualityDedication: 'Dedicação à Qualidade',
-		},
-
-		// Timeline Types
-		timelineTypes: {
-			education: 'Educação',
-			project: 'Projeto',
-			work: 'Trabalho',
-			goal: 'Objetivo',
 		},
 
 		// Metadata
@@ -555,20 +550,6 @@ export const translations = {
 			contactTitle: 'Contact',
 		},
 
-		// Contact Additional
-		contactDetails: {
-			title: 'Contact Information',
-			socialMedia: 'Social Media',
-			availability: 'Availability',
-			sendMessage: 'Send a Message',
-			availabilityItems: [
-				'Remote or hybrid work',
-				'CLT 5x2 schedule',
-				'No public-facing roles',
-				'Available for immediate start',
-			],
-		},
-
 		// Projects Additional
 		projectLabels: {
 			technologies: 'Technologies',
@@ -578,36 +559,45 @@ export const translations = {
 			responsive: 'Responsive',
 		},
 
-		// Skills Additional
-		skillsSummary: {
-			title: 'Focus on Accessibility and Quality',
-			wcag: 'WCAG 2.1',
-			complianceAA: 'Compliance AA',
-			lighthouseScore: 'Lighthouse Score',
-			mobileFirst: 'Mobile-First',
+		// Tech Stack Items
+		techStack: {
+			react: 'React',
+			typescript: 'TypeScript',
+			tailwind: 'Tailwind CSS',
+			motion: 'Motion',
+			storybook: 'Storybook',
+			designSystem: 'Design System',
+			nextjs: 'Next.js',
+			accessibility: 'Accessibility',
+			performance: 'Performance',
+			html5: 'HTML5',
+			css3: 'CSS3',
+			javascript: 'JavaScript',
+			isGdApi: 'is.gd API',
+			gamerPowerApi: 'GamerPower API',
+		},
+
+		// Performance Scores
+		performanceScores: {
+			lighthouse92: '92/100 Lighthouse',
+			lighthouse89: '89/100 Lighthouse',
+			lighthouse95: '95/100 Lighthouse',
+			lighthouse96: '96/100 Lighthouse',
+			lighthouse91: '91/100 Lighthouse',
+		},
+
+		// Accessibility Levels
+		accessibilityLevels: {
+			wcag21AA: 'WCAG 2.1 AA',
+			wcag21AAA: 'WCAG 2.1 AAA',
+		},
+
+		// Responsive Design Terms
+		responsiveTerms: {
+			mobileFirst: 'Mobile-first',
+			adaptiveDesign: 'Adaptive Design',
+			progressiveEnhancement: 'Progressive Enhancement',
 			responsiveDesign: 'Responsive Design',
-		},
-
-		// Timeline Additional
-		timelineExtras: {
-			currentStatus: 'Current Status',
-			currentStatusDescription:
-				'Currently working as a cashier at Atacadão while seeking opportunities as a junior frontend developer. Focused on remote positions with CLT 5x2 schedule, no public-facing roles.',
-			experience: 'Current Experience',
-			experienceRole: 'Cashier - Atacadão',
-			objective: 'Objective',
-			objectiveRole: 'Junior Frontend Developer',
-			yearsStudy: 'Years of Study',
-			projectsCount: 'Projects Developed',
-			qualityDedication: 'Dedication to Quality',
-		},
-
-		// Timeline Types
-		timelineTypes: {
-			education: 'Education',
-			project: 'Project',
-			work: 'Work',
-			goal: 'Goal',
 		},
 
 		// Metadata
