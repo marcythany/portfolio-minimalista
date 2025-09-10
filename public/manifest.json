@@ -1,0 +1,25 @@
+{
+	"name": "Marcel Sobral - Portfolio",
+	"short_name": "Marcy Portfolio",
+	"description": "Portfolio de Marcel 'Marcy' Sobral, desenvolvedor frontend júnior especializado em React, TypeScript e Next.js",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#ffffff",
+	"theme_color": "#2D5A27",
+	"orientation": "portrait-primary",
+	"scope": "/",
+	"lang": "pt-BR",
+	"categories": ["portfolio", "developer", "frontend"],
+	"icons": [
+		{
+			"src": "/favicon.ico",
+			"sizes": "16x16 32x32 48x48",
+			"type": "image/x-icon"
+		},
+		{
+			"src": "/apple-touch-icon.png",
+			"sizes": "180x180",
+			"type": "image/png"
+		}
+	]
+}

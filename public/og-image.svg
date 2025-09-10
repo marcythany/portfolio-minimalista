@@ -1,0 +1,15 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#2D5A27"/>
+  <rect x="60" y="60" width="1080" height="510" rx="20" fill="#ffffff"/>
+  <circle cx="300" cy="200" r="80" fill="#85C88A"/>
+  <path d="M260 280 Q300 320 340 280" stroke="#2D5A27" stroke-width="6" fill="none"/>
+  <circle cx="275" cy="180" r="8" fill="#2D5A27"/>
+  <circle cx="325" cy="180" r="8" fill="#2D5A27"/>
+  <text x="600" y="200" fill="#2D5A27" font-family="Arial, sans-serif" font-size="48" font-weight="bold">Marcel Sobral</text>
+  <text x="600" y="260" fill="#666666" font-family="Arial, sans-serif" font-size="24">Frontend Developer</text>
+  <text x="600" y="320" fill="#666666" font-family="Arial, sans-serif" font-size="20">React • TypeScript • Next.js</text>
+  <text x="600" y="380" fill="#666666" font-family="Arial, sans-serif" font-size="18">Accessibility • Performance • WCAG AA</text>
+  <rect x="60" y="450" width="1080" height="120" rx="10" fill="#f0f9f0"/>
+  <text x="120" y="490" fill="#2D5A27" font-family="Arial, sans-serif" font-size="16">Portfolio • marcy-miniportfolio.vercel.app</text>
+  <text x="120" y="520" fill="#2D5A27" font-family="Arial, sans-serif" font-size="16">GitHub • linkedin.com/in/marcythany</text>
+</svg>

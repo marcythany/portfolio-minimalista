@@ -84,6 +84,16 @@ export const translations = {
 			},
 		},
 
+		// Skills Summary
+		skillsSummary: {
+			title: 'Foco em Acessibilidade e Qualidade',
+			wcag: 'WCAG 2.1 AA',
+			complianceAA: 'Conformidade AA',
+			lighthouseScore: 'Pontuação Lighthouse',
+			mobileFirst: 'Mobile First',
+			responsiveDesign: 'Design Responsivo',
+		},
+
 		// Projects Section
 		projects: {
 			title: 'Projetos',
@@ -193,6 +203,28 @@ export const translations = {
 			],
 		},
 
+		// Timeline Types
+		timelineTypes: {
+			education: 'Educação',
+			project: 'Projeto',
+			work: 'Trabalho',
+			goal: 'Objetivo',
+		},
+
+		// Timeline Extras
+		timelineExtras: {
+			currentStatus: 'Status Atual',
+			currentStatusDescription:
+				'Atualmente trabalhando como operador de caixa enquanto busco oportunidades como desenvolvedor frontend júnior.',
+			experience: 'Experiência',
+			experienceRole: 'Operador de Caixa',
+			objective: 'Objetivo',
+			objectiveRole: 'Desenvolvedor Frontend Jr.',
+			yearsStudy: 'Anos de Estudo',
+			projectsCount: 'Projetos Desenvolvidos',
+			qualityDedication: 'Dedicação à Qualidade',
+		},
+
 		// Contact Section
 		contact: {
 			title: 'Vamos Conversar',
@@ -228,6 +260,20 @@ export const translations = {
 				linkedin: 'LinkedIn',
 				github: 'GitHub',
 			},
+		},
+
+		// Contact Details
+		contactDetails: {
+			title: 'Informações de Contato',
+			socialMedia: 'Redes Sociais',
+			availability: 'Disponibilidade',
+			availabilityItems: [
+				'Disponível para oportunidades remotas',
+				'Regime CLT 5x2',
+				'Trabalho em equipe estruturado',
+				'Comunicação clara e objetiva',
+			],
+			sendMessage: 'Envie uma Mensagem',
 		},
 
 		// Footer
@@ -391,6 +437,16 @@ export const translations = {
 			},
 		},
 
+		// Skills Summary
+		skillsSummary: {
+			title: 'Focus on Accessibility and Quality',
+			wcag: 'WCAG 2.1 AA',
+			complianceAA: 'AA Compliance',
+			lighthouseScore: 'Lighthouse Score',
+			mobileFirst: 'Mobile First',
+			responsiveDesign: 'Responsive Design',
+		},
+
 		// Projects Section
 		projects: {
 			title: 'Projects',
@@ -497,6 +553,28 @@ export const translations = {
 					description: 'Seeking opportunities as a junior frontend developer.',
 				},
 			],
+		},
+
+		// Timeline Types
+		timelineTypes: {
+			education: 'Education',
+			project: 'Project',
+			work: 'Work',
+			goal: 'Goal',
+		},
+
+		// Timeline Extras
+		timelineExtras: {
+			currentStatus: 'Current Status',
+			currentStatusDescription:
+				'Currently working as a cashier while seeking opportunities as a junior frontend developer.',
+			experience: 'Experience',
+			experienceRole: 'Cashier Operator',
+			objective: 'Objective',
+			objectiveRole: 'Junior Frontend Developer',
+			yearsStudy: 'Years of Study',
+			projectsCount: 'Projects Developed',
+			qualityDedication: 'Quality Dedication',
 		},
 
 		// Contact Section

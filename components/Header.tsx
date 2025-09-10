@@ -4,17 +4,35 @@ import { Button } from '@/components/ui/button';
 import { useTranslation } from '@/lib/hooks/useTranslation';
 import { localeNames } from '@/lib/i18n';
 import { Globe, Menu, Moon, Sun, X } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export function Header() {
 	const { t, locale, switchLocale } = useTranslation();
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
-	const [isDark, setIsDark] = useState(false);
+	const [isDark, setIsDark] = useState(() => {
+		if (typeof window !== 'undefined') {
+			return document.documentElement.classList.contains('dark');
+		}
+		return false;
+	});
 
 	const toggleTheme = () => {
-		setIsDark(!isDark);
+		const newIsDark = !isDark;
+		setIsDark(newIsDark);
 		document.documentElement.classList.toggle('dark');
+		// Persist theme preference
+		localStorage.setItem('theme', newIsDark ? 'dark' : 'light');
 	};
+
+	// Sync theme state with document on mount
+	useEffect(() => {
+		const savedTheme = localStorage.getItem('theme');
+		if (savedTheme) {
+			const shouldBeDark = savedTheme === 'dark';
+			setIsDark(shouldBeDark);
+			document.documentElement.classList.toggle('dark', shouldBeDark);
+		}
+	}, []);
 
 	const toggleLanguage = () => {
 		const newLocale = locale === 'pt-BR' ? 'en' : 'pt-BR';
