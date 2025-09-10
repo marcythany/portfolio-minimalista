@@ -73,7 +73,7 @@ export const translations = {
 				typescript: 'TypeScript',
 				nextjs: 'Next.js',
 				tailwind: 'Tailwind CSS',
-				framer: 'Framer Motion',
+				framer: 'Motion',
 				storybook: 'Storybook',
 				git: 'Git & GitHub',
 				figma: 'Figma',
@@ -94,11 +94,11 @@ export const translations = {
 			nadiacosturas: {
 				title: 'NadiaCosturas',
 				description:
-					'Cartão de visita virtual responsivo com animações Framer Motion e sistema de design tokens.',
-				tech: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+					'Cartão de visita virtual responsivo com animações Motion e sistema de design tokens.',
+				tech: ['React', 'TypeScript', 'Tailwind CSS', 'Motion'],
 				features: [
 					'Design responsivo mobile-first',
-					'Animações suaves com Framer Motion',
+					'Animações suaves com Motion',
 					'Sistema de design tokens customizado',
 					'Otimização para Core Web Vitals',
 					'Acessibilidade WCAG 2.1 AA',
@@ -384,7 +384,7 @@ export const translations = {
 				typescript: 'TypeScript',
 				nextjs: 'Next.js',
 				tailwind: 'Tailwind CSS',
-				framer: 'Framer Motion',
+				framer: 'Motion',
 				storybook: 'Storybook',
 				git: 'Git & GitHub',
 				figma: 'Figma',
@@ -405,11 +405,11 @@ export const translations = {
 			nadiacosturas: {
 				title: 'NadiaCosturas',
 				description:
-					'Responsive virtual business card with Framer Motion animations and design token system.',
-				tech: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+					'Responsive virtual business card with Motion animations and design token system.',
+				tech: ['React', 'TypeScript', 'Tailwind CSS', 'Motion'],
 				features: [
 					'Mobile-first responsive design',
-					'Smooth Framer Motion animations',
+					'Smooth Motion animations',
 					'Custom design token system',
 					'Core Web Vitals optimization',
 					'WCAG 2.1 AA accessibility',

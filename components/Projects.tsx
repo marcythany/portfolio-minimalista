@@ -28,6 +28,9 @@ interface Project {
 		accessibility?: string;
 		responsive?: string;
 	};
+	category: string;
+	year: string;
+	status: 'completed' | 'in-progress' | 'planned';
 }
 
 export function Projects() {
@@ -40,7 +43,7 @@ export function Projects() {
 			title: t('projects.nadiacosturas.title'),
 			description: t('projects.nadiacosturas.description'),
 			image: '/images/projects/nadiacosturas/thumbnail.webp',
-			tech: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+			tech: ['React', 'TypeScript', 'Tailwind CSS', 'Motion'],
 			features: [
 				t('projects.nadiacosturas.features.0'),
 				t('projects.nadiacosturas.features.1'),
@@ -55,6 +58,9 @@ export function Projects() {
 				accessibility: 'WCAG 2.1 AA',
 				responsive: 'Mobile-first',
 			},
+			category: 'Web Development',
+			year: '2024',
+			status: 'completed',
 		},
 		{
 			id: 'nexcart',
@@ -75,6 +81,9 @@ export function Projects() {
 				accessibility: 'WCAG 2.1 AA',
 				responsive: 'Adaptive Design',
 			},
+			category: 'Design System',
+			year: '2024',
+			status: 'in-progress',
 		},
 		{
 			id: 'sacolaum',
@@ -96,6 +105,9 @@ export function Projects() {
 				accessibility: 'WCAG 2.1 AAA',
 				responsive: 'Progressive Enhancement',
 			},
+			category: 'Performance',
+			year: '2024',
+			status: 'completed',
 		},
 		{
 			id: 'sniplink',
@@ -116,6 +128,9 @@ export function Projects() {
 				accessibility: 'WCAG 2.1 AA',
 				responsive: 'Mobile-first',
 			},
+			category: 'Vanilla JS',
+			year: '2024',
+			status: 'completed',
 		},
 		{
 			id: 'gfg',
@@ -135,6 +150,9 @@ export function Projects() {
 				accessibility: 'WCAG 2.1 AA',
 				responsive: 'Responsive Design',
 			},
+			category: 'API Integration',
+			year: '2024',
+			status: 'completed',
 		},
 	];
 
