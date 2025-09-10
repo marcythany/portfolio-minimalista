@@ -45,18 +45,18 @@ export function Hero() {
 			onMouseMove={handleMouseMove}
 			aria-label={t('hero.name')}
 		>
-			{/* Dynamic Background with Mouse Interaction */}
+			{/* Enhanced Dynamic Background with Mouse Interaction */}
 			<div
-				className='absolute inset-0 opacity-20'
+				className='absolute inset-0 opacity-40 dark:opacity-60'
 				style={{
-					background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(59, 130, 246, 0.15) 0%, transparent 50%)`,
+					background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(59, 130, 246, 0.25) 0%, transparent 60%)`,
 				}}
 			/>
 
-			{/* Floating Elements */}
-			<div className='absolute top-20 left-10 w-20 h-20 bg-primary/10 rounded-full blur-xl animate-pulse' />
-			<div className='absolute bottom-20 right-10 w-32 h-32 bg-secondary/10 rounded-full blur-xl animate-pulse delay-1000' />
-			<div className='absolute top-1/2 left-1/4 w-16 h-16 bg-accent/10 rounded-full blur-lg animate-bounce delay-500' />
+			{/* Enhanced Floating Elements with Better Visibility */}
+			<div className='absolute top-20 left-10 w-20 h-20 bg-primary/20 dark:bg-primary/30 rounded-full blur-xl animate-pulse shadow-lg' />
+			<div className='absolute bottom-20 right-10 w-32 h-32 bg-secondary/20 dark:bg-secondary/30 rounded-full blur-xl animate-pulse delay-1000 shadow-lg' />
+			<div className='absolute top-1/2 left-1/4 w-16 h-16 bg-accent/20 dark:bg-accent/30 rounded-full blur-lg animate-bounce delay-500 shadow-lg' />
 
 			<div
 				className={`max-w-4xl mx-auto text-center relative z-10 transition-all duration-1000 ${
@@ -94,8 +94,8 @@ export function Hero() {
 						<div className='absolute bottom-2 right-2 w-6 h-6 bg-green-500 rounded-full border-4 border-white dark:border-gray-800 z-20 animate-pulse' />
 					</div>
 
-					{/* Sparkle Effect */}
-					<Sparkles className='absolute -top-2 -right-2 h-6 w-6 text-yellow-400 animate-bounce' />
+					{/* Enhanced Sparkle Effect with Better Contrast */}
+					<Sparkles className='absolute -top-2 -right-2 h-6 w-6 text-yellow-500 dark:text-yellow-400 animate-bounce drop-shadow-lg' />
 				</div>
 
 				{/* Typography */}
@@ -153,19 +153,19 @@ export function Hero() {
 								href: 'https://github.com/marcythany',
 								icon: Github,
 								label: 'GitHub Profile',
-								color: 'hover:text-gray-900 dark:hover:text-gray-100',
+								color: 'hover:text-gray-800 dark:hover:text-gray-200', // Better contrast
 							},
 							{
 								href: 'https://www.linkedin.com/in/marcythany/',
 								icon: Linkedin,
 								label: 'LinkedIn Profile',
-								color: 'hover:text-blue-600',
+								color: 'hover:text-blue-700 dark:hover:text-blue-400', // Better contrast
 							},
 							{
 								href: 'mailto:marcythany@gmail.com',
 								icon: Mail,
 								label: 'Send Email',
-								color: 'hover:text-red-500',
+								color: 'hover:text-red-600 dark:hover:text-red-400', // Better contrast
 							},
 						].map(({ href, icon: Icon, label, color }) => (
 							<a
