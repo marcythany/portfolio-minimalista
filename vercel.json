@@ -1,16 +1,4 @@
 {
 	"buildCommand": "npm run build",
-	"outputDirectory": ".next",
-	"framework": "nextjs",
-	"functions": {
-		"src/app/**/*.ts": {
-			"runtime": "nodejs18.x"
-		}
-	},
-	"rewrites": [
-		{
-			"source": "/(.*)",
-			"destination": "/index.html"
-		}
-	]
+	"framework": "nextjs"
 }
