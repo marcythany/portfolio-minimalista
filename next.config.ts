@@ -10,16 +10,16 @@ const nextConfig: NextConfig = {
 		imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
 	},
 
-	// Performance optimizations
+	// Performance optimizations - Turbopack compatible
 	experimental: {
-		optimizeCss: true,
 		scrollRestoration: true,
+		// Note: optimizeCss removed as it conflicts with Turbopack
 	},
 
-	// Bundle analyzer for debugging
-	webpack: (config, { dev, isServer }) => {
-		// Optimize bundle splitting
-		if (!dev && !isServer) {
+	// Turbopack-compatible webpack config
+	webpack: (config, { dev, isServer, webpack }) => {
+		// Only apply optimizations in production and when not using Turbopack
+		if (!dev && !isServer && !process.env.TURBOPACK) {
 			config.optimization.splitChunks.chunks = 'all';
 			config.optimization.splitChunks.cacheGroups = {
 				...config.optimization.splitChunks.cacheGroups,
