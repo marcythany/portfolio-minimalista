@@ -6,12 +6,15 @@ export default defineConfig({
 	plugins: [react()],
 	test: {
 		environment: 'jsdom',
-		setupFiles: ['./test/setup.ts'],
+		setupFiles: ['./src/tests/setup.ts'],
 		globals: true,
 	},
 	resolve: {
 		alias: {
-			'@': path.resolve(__dirname, './'),
+			'@': path.resolve(__dirname, './src'),
 		},
+	},
+	css: {
+		postcss: './src/config/postcss.config.mjs',
 	},
 });
