@@ -3,9 +3,12 @@
 import { Button } from '@/components/ui/button';
 import { useTranslation } from '@/lib/hooks/useTranslation';
 import { Download, Github, Linkedin, Mail, MapPin } from 'lucide-react';
+import Image from 'next/image';
+import { useState } from 'react';
 
 export function Hero() {
 	const { t } = useTranslation();
+	const [imageError, setImageError] = useState(false);
 
 	const scrollToContact = () => {
 		const element = document.querySelector('#contact');
@@ -21,10 +24,24 @@ export function Hero() {
 			aria-label={t('hero.name')}
 		>
 			<div className='max-w-4xl mx-auto text-center'>
-				{/* Profile Image Placeholder */}
+				{/* Profile Image */}
 				<div className='mb-8'>
-					<div className='w-32 h-32 sm:w-40 sm:h-40 mx-auto rounded-full bg-gradient-brasil shadow-brasil flex items-center justify-center text-white text-4xl sm:text-5xl font-bold'>
-						MS
+					<div className='relative w-32 h-32 sm:w-40 sm:h-40 mx-auto'>
+						{!imageError ? (
+							<Image
+								src='/images/profile/photo.jpg'
+								alt={`${t('hero.name')} - Profile Photo`}
+								fill
+								className='rounded-full object-cover shadow-brasil border-4 border-white dark:border-gray-800'
+								sizes='(max-width: 640px) 128px, 160px'
+								onError={() => setImageError(true)}
+								priority
+							/>
+						) : (
+							<div className='w-full h-full rounded-full bg-gradient-brasil shadow-brasil flex items-center justify-center text-white text-4xl sm:text-5xl font-bold border-4 border-white dark:border-gray-800'>
+								MS
+							</div>
+						)}
 					</div>
 				</div>
 
