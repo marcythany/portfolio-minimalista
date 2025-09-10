@@ -233,7 +233,8 @@ export const translations = {
 		// Footer
 		footer: {
 			rights: 'Todos os direitos reservados.',
-			madeWith: 'Feito com',
+			madeWith: 'Feito em colaboração com',
+			kiloCodeAgent: 'Kilo Code Agent',
 			and: 'e',
 			description:
 				'Desenvolvedor Frontend Júnior especializado em React, TypeScript e Next.js. Focado em acessibilidade e excelência técnica.',
@@ -543,7 +544,8 @@ export const translations = {
 		// Footer
 		footer: {
 			rights: 'All rights reserved.',
-			madeWith: 'Made with',
+			madeWith: 'Made in collaboration with',
+			kiloCodeAgent: 'Kilo Code Agent',
 			and: 'and',
 			description:
 				'Junior Frontend Developer specialized in React, TypeScript and Next.js. Focused on accessibility and technical excellence.',

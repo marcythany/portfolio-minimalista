@@ -21,6 +21,9 @@ export const metadata: Metadata = {
 		'Marcel Sobral',
 		'Marcy',
 		'desenvolvedor frontend',
+		'frontend developer',
+		'Junior Front End developer',
+		'desenvolvedor junior',
 		'React',
 		'TypeScript',
 		'Next.js',
@@ -39,7 +42,7 @@ export const metadata: Metadata = {
 		type: 'website',
 		locale: 'pt_BR',
 		alternateLocale: 'en_US',
-		url: 'https://marcelsobral.dev',
+		url: 'https://marcy-miniportfolio.vercel.app/',
 		siteName: 'Marcel Sobral - Portfolio',
 		title: 'Marcel Sobral - Desenvolvedor Frontend Júnior',
 		description:
@@ -70,9 +73,6 @@ export const metadata: Metadata = {
 			'max-image-preview': 'large',
 			'max-snippet': -1,
 		},
-	},
-	verification: {
-		google: 'your-google-verification-code',
 	},
 };
 
