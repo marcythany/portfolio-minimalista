@@ -4,7 +4,8 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev --turbopack",
-		"build": "next build --turbopack",
+		"build": "next build",
+		"build:turbopack": "next build --turbopack",
 		"start": "next start",
 		"lint": "eslint",
 		"lint:fix": "eslint --fix",
@@ -16,6 +17,7 @@
 	},
 	"dependencies": {
 		"@radix-ui/react-slot": "^1.2.3",
+		"beasties": "^0.3.5",
 		"class-variance-authority": "^0.7.1",
 		"clsx": "^2.1.1",
 		"lucide-react": "^0.543.0",
@@ -33,9 +35,9 @@
 		"@types/node": "^20",
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
+		"@vitejs/plugin-react": "^4.2.1",
 		"@vitest/coverage-v8": "^1.0.4",
 		"@vitest/ui": "^1.0.4",
-		"@vitejs/plugin-react": "^4.2.1",
 		"eslint": "^9",
 		"eslint-config-next": "15.5.2",
 		"jsdom": "^23.0.1",

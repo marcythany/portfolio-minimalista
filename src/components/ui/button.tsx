@@ -1,6 +1,6 @@
-import { cn } from '../../lib/utils/utils';
 import { cva, type VariantProps } from 'class-variance-authority';
 import * as React from 'react';
+import { cn } from '../../lib/utils/utils';
 
 const buttonVariants = cva(
 	'inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0',
@@ -20,10 +20,10 @@ const buttonVariants = cva(
 				brasil: 'bg-gradient-brasil text-white shadow-brasil hover:opacity-90',
 			},
 			size: {
-				default: 'h-9 px-4 py-2 gap-2 text-sm [&_svg]:size-4',
-				sm: 'h-8 rounded-md px-3 gap-1.5 text-xs [&_svg]:size-3.5',
-				lg: 'h-10 rounded-md px-8 gap-2.5 text-base [&_svg]:size-5',
-				icon: 'h-9 w-9',
+				default: 'h-11 px-4 py-2 gap-2 text-sm [&_svg]:size-4 min-h-[44px]',
+				sm: 'h-10 rounded-md px-3 gap-1.5 text-xs [&_svg]:size-3.5 min-h-[44px]',
+				lg: 'h-12 rounded-md px-8 gap-2.5 text-base [&_svg]:size-5 min-h-[44px]',
+				icon: 'h-11 w-11 min-h-[44px] min-w-[44px]',
 			},
 		},
 		defaultVariants: {

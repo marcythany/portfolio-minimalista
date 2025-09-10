@@ -74,6 +74,10 @@ export const metadata: Metadata = {
 			'max-snippet': -1,
 		},
 	},
+	// Performance optimizations
+	other: {
+		'color-scheme': 'light dark',
+	},
 };
 
 export default function RootLayout({
